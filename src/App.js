@@ -61,6 +61,11 @@ let{id,name}=obj
 console.log(id,name);
 
 console.log(obj2);
+console.log("destructure arry")
+
+
+
+
+console.log("dsaddsadsad");
 export default App;
 
-console.log("destructure arry")
