@@ -4,68 +4,13 @@ import matchers from '@testing-library/jest-dom/matchers';
 
 function App() {
 
-  // arry-copy
-
-  // let arr =[10,20,30];
-
-  // // copy-arr
-
-  // let arr1=[...arr];
-  // console.log(arr1);
-
-  // // merge-arr
-
-
+  
 
 
   
 
-  // let arr2 =[90,...arr,100];
-  // console.log(arr2);
-
-  // // destructure-arr
-
-  // let [eng,guj,ss,sci]=arr;
-  // console.log(ss);
+  
 }
 
-// Object-copy
-
-
-let obj={
-  id:101,
-  name:"sagar"
-};
-
-// copy
-
-console.log("copy arry")
-let obj1={...obj};
-console.log(obj1);
-
-
-// merge
-
-console.log("merge arry")
-
-let obj2={
-  ...obj,
-  place:"surat",
-  name:"ajay"
-};
-
-// destructure
-
-
-let{id,name}=obj
-console.log(id,name);
-
-console.log(obj2);
-console.log("destructure arry")
-
-
-
-
-console.log("dsaddsadsad");
 export default App;
 
