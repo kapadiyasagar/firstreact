@@ -18,8 +18,8 @@ function App() {
 
 
 
-  // asssd
-// 
+  
+
   // let arr2 =[90,...arr,100];
   // console.log(arr2);
 
@@ -39,11 +39,14 @@ let obj={
 
 // copy
 
+console.log("copy arry")
 let obj1={...obj};
 console.log(obj1);
 
 
 // merge
+
+console.log("merge arry")
 
 let obj2={
   ...obj,
@@ -53,8 +56,11 @@ let obj2={
 
 // destructure
 
+
 let{id,name}=obj
 console.log(id,name);
 
 console.log(obj2);
 export default App;
+
+console.log("destructure arry")
