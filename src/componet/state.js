@@ -1,19 +1,22 @@
 import React, { useState } from 'react';
 
-function countryfun(props) {
-    const [country,setcountry]=useState('india');
+function State(props) {
+
+  const [contryname,setContry] = useState ('UK')
+const[gdp,setGdp]=useState('5')
 
     const changeContry=()=>{
-        setcountry('uk')
+        setContry('India')
     }
 
-
     return (
-        <div>
-            <p>country[function based componet]:{country}</p>        
-            <button></button>
-        </div>
+       <>
+       <p>contry :[funcation base componate ] {contryname}</p>
+       <button onClick={()=> changeContry()}>change</button>
+        <p>Gdp:{gdp}</p>
+        <button onClick={()=> setGdp(10)}>change</button>
+       </>
     );
 }
 
-export default state;
+export default State;
