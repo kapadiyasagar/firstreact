@@ -3,9 +3,9 @@ import './App.css';
 import matchers from '@testing-library/jest-dom/matchers';
 import Contry from './componet/container/contry';
 
-function App() {
+function Medicine(props) {
 
-    const detail = [
+    const data = [
       {
         id: 101,
         name: 'Abacavir',
@@ -50,10 +50,12 @@ function App() {
   
 // console.log(detail[1 + 2].price);
 
-  // let  filterdata = data.filterdata((value, index) => value.expiry >= 2022);
-  // console.log(filterdata);
+let  filterdata = data.filter((value, index) => (value.status==true));
 
-  // data.map((value, index) => console.log(value.id)(value.name));
+let total=filterdata.reduce((value,index)=>value+index.price,0);
+
+console.log(total);
+console.log(filterdata);
 
   return (
     <>
@@ -67,7 +69,7 @@ function App() {
           <td>total</td>
         </tr>
         {
-          detail.map((value, index) => {
+          data.map((value, index) => {
             return (
               <tr>
                 <td>{value.id}</td>
@@ -76,7 +78,7 @@ function App() {
                 <td>{value.expiry}</td>
                 <td>{value.status}</td>
                 <td>{value.total}</td>
-                {index === 0 ? <td rowspan = {detail.length = "5"} > {} </td> : null}  
+                {index === 0 ? <td rowspan = {filterdata.length} > {total} </td> : null}  
               </tr>
             )
           }
@@ -88,5 +90,5 @@ function App() {
 }
 
 
-export default App;
+export default Medicine;
 
