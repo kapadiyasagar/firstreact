@@ -76,7 +76,7 @@ function App() {
                 <td>{value.expiry}</td>
                 <td>{value.status}</td>
                 <td>{value.total}</td>
-                {/* {index ==== 0 ? <td rowspan = {data.length = "5"} > {ans1} </td> : null}   */}
+                {index === 0 ? <td rowspan = {detail.length = "5"} > {} </td> : null}  
               </tr>
             )
           }
