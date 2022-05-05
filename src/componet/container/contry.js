@@ -11,9 +11,9 @@ class Contry extends Component {
 }
 
 changeContry=()=>{
-    this.setState{{
+    this.setState( {
         contry:'uk'
-    }};
+    });
 }
  
 
@@ -22,7 +22,7 @@ changeContry=()=>{
         return (
             <>
             <div>Contry: {this.state.contry}</div>
-            <button onClick={()=> this.changeContry()}change</button>
+            <button onClick={()=> this.changeContry()}>change</button>
             </>
         );
     }
