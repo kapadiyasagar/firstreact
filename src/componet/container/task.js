@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
+import Course from './course';
 
-function changes(props) {
+function Branch(props) {
 
     const [branchname,setBranch]=useState('Rw-1')
-    const[branchcourse,setcours]=useState('android')
+    const[course,setcours]=useState('android')
 
-    const changeContry=()=>{
+    const Coursechange=()=>{
         setBranch('rw-2')
-        // setcours('node-js')
+        setcours('node-js')
     }
 
     return (
-        <div>
+        <>
             <p>Branch{branchname}</p>
-            <button onClick={()=>changeContry()}>change</button>
-        </div>
+            <button onClick={()=>Coursechange()}>change</button>
+
+            <Course coursname={branchname}/>
+        </>
     );
 
 }
-export default changes;
+export default Branch; 
