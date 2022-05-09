@@ -7,9 +7,12 @@ import Cstate from './componet/container/changecity state';
 
 function App() {
 
-return(
-  <>
-  <Changes/>
+  console.log("fsdaf")
+  
+  return(
+    <>
+  <changes/>
+    {/* <p>fsdfsdfsdf</p> */}
   </>
 )
 
