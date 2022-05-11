@@ -42,7 +42,13 @@ function App() {
         bonus: 2000,
         status: true
     },
-];
+]
+
+let filterdata=empolay.filter((d,i)=>(d.status==true))
+console.log(filterdata)
+
+let total=filterdata.reduce((acc,d) =>acc +d.salary+d.bonus,0)
+console.log(total);
 
 return (
   <>
@@ -53,18 +59,20 @@ return (
               <td>salary</td>
               <td>bonus</td>
               <td>status</td>
+              <td>salary+bonus</td>
               <td>total</td>
           </tr>
           {
-              empolay.map((value, index) => {
+              empolay.map((d, i) => {
                   return (
                       <tr>
-                          <td>{value.name}</td>
-                          <td>{value.age}</td>
-                          <td>{value.salary}</td>
-                          <td>{value.bonus}</td>
-                          <td>{value.status}</td>
-                          <td>{value.salary}</td>
+                          <td>{d.name}</td>
+                          <td>{d.age}</td>
+                          <td>{d.salary}</td>
+                          <td>{d.bonus}</td>
+                          <td>{d.status.toString()}</td>
+                          <td>{d.salary+d.bonus}</td>
+                          {i==0?<td rowSpan={filterdata.length}>{total}</td>:null}
                       </tr>
                   )
               }
