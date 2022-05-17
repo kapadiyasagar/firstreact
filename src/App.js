@@ -8,18 +8,16 @@ import Branch from './componet/container/task';
 import Cycle from './componet/container/componet-cycle-method/cycle';
 import Time from './componet/container/componet-cycle-method/cycle';
 import Timefun from './componet/container/componet-cycle-method/funcation-base';
+import { useEffect, useState } from 'react';
+import Counter from './componet/container/counter';
 
 function App() {
-
-  // console.log("fsdaf")
-  
-  return(
-
+return(
     <>
-<Timefun/>
-  </>
+    <Counter/>
+    </>
 )
-
+  
 }
 
 export default App;
